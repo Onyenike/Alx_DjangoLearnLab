@@ -3,9 +3,10 @@
 from bookshelf.models import Book  
 #Retrieve the book instance you want to delete
 # Assuming 'Nineteen Eighty-Four' is the title of the book you previously created/updated. 
-# If you created multiple, or have others, you might want to retrieve by ID: # book = Book.objects.get(id=YOUR_BOOK_ID_HERE)
+# If you created multiple, or have others, you might want to retrieve by ID: 
+# book = Book.objects.get(id=YOUR_BOOK_ID_HERE)
 try: 
-   book = Book.objects.get(title='Nineteen Eighty-Four') 
+   book = Book.objects.get(title='1984') 
 except Book.DoesNotExist: 
    print("Book 'Nineteen Eighty-Four' not found. It might have already been deleted or never existed.") 
    # If the book is not found, the deletion part won't execute. 
