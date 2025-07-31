@@ -47,3 +47,4 @@ if name == 'main':
     librarian = retrieve_librarian_for_library('Library 1')
     print("\nLibrarian for Library 1:")
     print(librarian.name)
+Librarian.objects.get(library=librabry1)
