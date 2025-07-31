@@ -1,6 +1,6 @@
 import os
 import django
-
+objects.filter(author=author)
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django-models.settings')
 django.setup()
 
