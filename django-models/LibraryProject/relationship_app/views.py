@@ -6,5 +6,6 @@ def library_detail(request):
     return render(request, 'library_detail.html')
 
 def list_books(request):
-    return render(request, 'list_books.html')
+    return render(request, "relationship_app/list_books.html", "Book.objects.all()")
+
 
