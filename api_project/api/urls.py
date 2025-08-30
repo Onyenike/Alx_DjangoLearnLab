@@ -3,5 +3,6 @@ from .views import BookList
 
 
 urlpatterns = [
-    path('books/', BookList.as_view(), name='book-list'),
+    path("api/books", BookListCreateAPIView.as_view(), name="book_list_create")
 ]
+
